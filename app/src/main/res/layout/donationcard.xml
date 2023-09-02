@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/AppGrey">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/donationName"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"></TextView>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/donationName"
+                    android:background="@color/black"
+                    />
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/donationEmail"
+                    android:background="@color/black"
+                    />
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/Ddate"
+                    android:background="@color/black"
+                    />
+
+
+                <TextView
+                    android:id="@+id/donationEmail"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/donationName"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/Ddate"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/donationEmail"
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/Dtime"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Ddate"
+                    android:text="Time"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"></TextView>
+
+
+                <Button
+                    android:id="@+id/deleteButtonTS"
+                    android:layout_width="32dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/binicon"
+                    android:onClick="deleteVolunteer"
+                    android:tint="@android:color/black">
+
+                </Button>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

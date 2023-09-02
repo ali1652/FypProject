@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <Button
+        android:id="@+id/toLogIN"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:onClick="toLogIn2"
+        android:textSize="15sp"
+        android:background="@drawable/button"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="35dp"
+        android:text="Log In"
+        android:layout_below="@id/subHeaderBG"
+        />
+
+    <Button
+        android:id="@+id/toSignUp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:onClick="toSignUp"
+        android:text="Sign Up"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/toLogIN"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="40dp"
+       android:layout_below="@id/subHeaderBG" />
+
+    <View
+        android:id="@+id/logo"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/logo" />
+    <View
+        android:id="@+id/subHeaderBG"
+        android:layout_width="428dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/logo"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/subheaderbg" />
+
+    <TextView
+        android:id="@+id/please_fill"
+        android:layout_width="290dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/logo"
+        android:text="Welcome to the Kingston University Food Bank App"
+        android:textSize="30dp"
+        android:textColor="@color/Blackk"
+        android:textAlignment="center"
+        />
+
+
+
+
+</RelativeLayout>

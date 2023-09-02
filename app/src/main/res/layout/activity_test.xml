@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightBlue"
+    tools:context=".testActivity">
+
+    <TextView
+        android:id="@+id/shirtHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Shirts"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:background="@color/DarkBlue"/>
+    <EditText
+        android:id="@+id/foodId"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="id"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/headingAddButton"/>
+
+
+    <EditText
+        android:id="@+id/foodBrand"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="brand"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/foodId"/>
+
+
+
+    <EditText
+        android:id="@+id/foodName"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="name"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/foodBrand"/>
+
+    <EditText
+        android:id="@+id/foodCategory"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="category"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/foodName"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/foodAmount"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:hint="Amount"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/foodSize"/>
+
+    <EditText
+        android:id="@+id/foodSize"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:hint="Size"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/foodName"/>
+
+
+
+
+
+    <Button
+        android:id="@+id/addShirts"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="buttonClick"
+        android:background="@drawable/plusblack"
+        android:layout_below="@id/headingAddButton"
+        android:layout_toRightOf="@id/foodBrand"
+        android:layout_marginLeft="3dp"
+        />
+
+    <Button
+        android:id="@+id/updateQuantity"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="updateAmount"
+        android:background="@drawable/rgen"
+        android:layout_below="@id/foodSize"
+        android:layout_toRightOf="@id/foodBrand"
+        android:layout_marginLeft="3dp"
+        />
+
+
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/listview"
+        android:descendantFocusability="afterDescendants"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/foodSearchView"
+        android:layout_marginTop="0dp"
+        />
+
+
+    <TextView
+        android:id="@+id/headingAddButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter below to add to your shirts wardrobe"
+        android:textSize="20sp"
+        android:layout_below="@id/shirtHeader"/>
+
+
+
+
+
+    <Button
+        android:id="@+id/Home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/home_icon"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:onClick="toHomePage" />
+
+    <SearchView
+        android:id="@+id/foodSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:queryHint="Food name"
+        android:iconifiedByDefault="false"
+        android:layout_below="@id/spinnerCategory"/>
+
+    <Button
+        android:id="@+id/allFilterbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All"
+        android:onClick="allFilter"/>
+
+    <Button
+        android:id="@+id/snacksFilterbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Snacks"
+        android:layout_alignParentRight="true"
+        android:onClick="filterSnacks"/>
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerChooseCategory"
+        />
+    <Spinner
+        android:id="@+id/spinnerChooseMeasurement"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodName"
+        android:layout_toRightOf="@id/foodSize"
+        />
+    <Spinner
+        android:id="@+id/spinnerChooseCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodAmount"
+
+        />
+
+
+</RelativeLayout>

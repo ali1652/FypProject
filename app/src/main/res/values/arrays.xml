@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_items">
+    <item>Bakery and Bread</item>
+        <item>Meat and Seafood</item>
+        <item>Pasta and Rice</item>
+        <item>Oils,Sauces,Salad Dressings and Condiments</item>
+        <item>Cereals and Breakfast foods</item>
+        <item>Soups and Canned foods</item>
+        <item>Ready Meals</item>
+        <item>Frozen foods</item>
+        <item>Dairy, Cheese and Eggs</item>
+        <item>Snacks and Crackers</item>
+        <item>Fruit and Vegtables</item>
+        <item>Drinks</item>
+    </string-array>
+
+</resources>

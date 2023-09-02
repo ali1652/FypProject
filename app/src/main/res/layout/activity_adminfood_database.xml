@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ADMINfoodDatabase">
+
+    <View
+        android:id="@+id/headerBar"
+        android:layout_width="428dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/headertitle" />
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="274dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="KU FOOD BANK"
+        android:textSize="32dp"
+        android:textColor="@color/White"
+        android:gravity="center_horizontal|top"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="78dp"
+        android:textSize="40dp"
+        android:textColor="@color/HeaderColor"
+        android:text="Admin Food Database"
+
+        android:gravity="center_horizontal|top"
+        />
+
+    <!-- Rectangle 34 -->
+    <View
+        android:id="@+id/subHeaderBG"
+        android:layout_width="428dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="143dp"
+        android:background="@drawable/foodbbackground"
+        />
+
+    <View
+        android:id="@+id/logo"
+        android:layout_width="79dp"
+        android:layout_height="76dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/logo"
+        />
+
+
+
+    <Button
+        android:id="@+id/backBTN"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="bpgBack"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/homeBTN"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/home_icon"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="toHome"
+        android:layout_alignParentRight="true"/>
+
+
+
+    -------------------------------------->
+
+
+    <TextView
+        android:id="@+id/em"
+        android:layout_width="280.96dp"
+        android:layout_height="28.32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+
+        android:textSize="20dp"
+        android:text="Select Category"
+        android:textColor="@color/Blackk"
+        android:layout_below="@id/title"
+        />
+
+    <TextView
+        android:id="@+id/em2"
+        android:layout_width="280.96dp"
+        android:layout_height="28.32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+
+        android:textSize="20dp"
+        android:text="Search for Food Item"
+        android:textColor="@color/Blackk"
+        android:layout_below="@id/spinnerCategory"
+        />
+
+
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="275dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/em"
+        android:background="@drawable/spinners"
+        />
+
+    <SearchView
+        android:id="@+id/foodSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/em2"
+        android:iconifiedByDefault="false"
+        android:queryHint="Food name"
+
+        />
+
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:id="@+id/listview"
+        android:descendantFocusability="afterDescendants"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/subHeaderBG"
+        android:layout_marginTop="0dp"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/em"
+        android:layout_toRightOf="@id/spinnerCategory"
+        android:background="@drawable/button"
+        android:layout_height="35dp"
+        android:onClick="allFilter"
+        android:text="All Food" />
+
+</RelativeLayout>

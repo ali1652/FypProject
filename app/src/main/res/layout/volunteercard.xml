@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/AppGrey"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/volunteerName"
+                    android:background="@color/black"
+                    />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/volunteerAge"
+                    android:background="@color/black"
+                    />
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/volunteerEmail"
+                    android:background="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/volunteerName"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="Name">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/volunteerAge"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                    android:layout_below="@id/volunteerName"
+                    android:text="Age">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/volunteerEmail"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_below="@id/volunteerAge"
+                    android:text="Email">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/volunteerKnumber"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_below="@id/volunteerEmail"
+                    android:text="K Number"
+                    >
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/deleteButtonTS"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/binicon"
+                    android:tint="@android:color/black"
+                    android:onClick="deleteVolunteer">
+
+                </Button>
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

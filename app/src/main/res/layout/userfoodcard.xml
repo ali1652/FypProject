@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/AppGrey"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/foodItemName"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="17dp">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/foodItemWeight"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:text="W"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/editFoodAmount"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="17dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/foodItemMeasurement"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:text="W"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/foodItemWeight"
+                    android:textSize="17dp">
+                </TextView>
+
+
+
+
+                <TextView
+                    android:id="@+id/editFoodAmount"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/foodItemName"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/foodItemName"
+                    android:text="0"
+                    android:textColor="@color/Blackk"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

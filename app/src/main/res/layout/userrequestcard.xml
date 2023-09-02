@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+
+
+
+                <View
+                    android:id="@+id/rectangle_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/header1"
+                    android:background="@drawable/bluebg"
+                    />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/rFoodItem3"
+                    android:background="@color/black"
+                    />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/rFoodItem2"
+                    android:background="@color/black"
+                    />
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/rFoodItem1"
+                    android:background="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/header1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bag Chosen Items"
+                    android:textSize="30dp"
+                    android:layout_marginBottom="5dp"/>
+
+
+
+
+                <TextView
+                    android:id="@+id/volunteerEmail"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_below="@id/date">
+
+                </TextView>
+
+
+
+                <TextView
+                    android:id="@+id/rFoodItem1"
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:text="Food Item 1"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/header1"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/rFoodItem2"
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rFoodItem1"
+                    android:text="Food Item 2"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"></TextView>
+
+                <TextView
+                    android:id="@+id/rFoodItem3"
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rFoodItem2"
+                    android:text="Food Item 3"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"></TextView>
+
+
+                <View
+                    android:id="@+id/rec5"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/header2"
+                    android:background="@drawable/subheaderbg"
+                    />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/header2"
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"></TextView>
+
+                <View
+                    android:id="@+id/line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/date"
+                    android:background="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/date"
+                    android:text="Time"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"></TextView>
+
+                <View
+                    android:id="@+id/line6"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/time"
+                    android:background="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/header2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date + Time"
+                    android:textSize="30dp"
+                    android:layout_below="@id/rFoodItem3"/>
+
+                <Button
+                    android:id="@+id/deleteButtonTS"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:layout_below="@id/line6"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:text="Cancel" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

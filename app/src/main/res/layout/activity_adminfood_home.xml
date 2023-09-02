@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ADMINfoodHome">
+
+
+    <Button
+        android:id="@+id/viewFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="toFoodDatabaseAdmin"
+        android:text="Food Database" />
+
+    <Button
+        android:id="@+id/addFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="toAddFood"
+        android:text="Add Food"
+        android:layout_below="@id/viewFood"/>
+
+    <Button
+        android:id="@+id/EditFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="toEditFood"
+        android:text="Edit Food"
+        android:layout_below="@id/addFood"/>
+
+</RelativeLayout>

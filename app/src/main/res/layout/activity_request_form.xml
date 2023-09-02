@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".requestForm">
+    <View
+        android:id="@+id/headerBar"
+        android:layout_width="428dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/headertitle" />
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="274dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="KU FOOD BANK"
+        android:textSize="32dp"
+        android:textColor="@color/White"
+        android:gravity="center_horizontal|top"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="78dp"
+        android:textSize="40dp"
+        android:textColor="@color/HeaderColor"
+        android:text="Request Form"
+
+        android:gravity="center_horizontal|top"
+        />
+
+    <View
+        android:id="@+id/subHeaderBG"
+        android:layout_width="428dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title"
+        android:background="@drawable/subheaderbg"
+        />
+
+    <View
+        android:id="@+id/logo"
+        android:layout_width="79dp"
+        android:layout_height="76dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/logo"
+        />
+
+    <TextView
+        android:id="@+id/please_fill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:layout_below="@id/title"
+        android:text="Please fill out the form below"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/backBTN"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="bpgBack"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/homeBTN"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/home_icon"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="toHome"
+        android:layout_alignParentRight="true"/>
+
+    -------------------------------------->
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/subHeaderBG"
+        android:background="@drawable/bluebg"
+        />
+
+    ------------------------------------------------>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/subH3"
+        android:background="@color/black"
+        />
+    <TextView
+        android:id="@+id/subH3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+
+        android:textSize="20dp"
+        android:text="You are allocated five items in a request bag but can pick up to three of them"
+        android:textColor="@color/Blackk"
+        android:layout_below="@id/please_fill"
+        />
+    <TextView
+        android:id="@+id/em"
+        android:layout_width="280.96dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+
+        android:textSize="15sp"
+        android:text="E-mail"
+        android:textColor="@color/Blackk"
+        android:layout_below="@id/subH3"
+        />
+
+    <EditText
+        android:id="@+id/rEmail"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/em"/>
+
+    <TextView
+        android:id="@+id/em2"
+        android:layout_width="280.96dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+
+        android:textSize="15sp"
+        android:text="First Name"
+        android:textColor="@color/Blackk"
+        android:layout_below="@id/rEmail"
+        />
+
+    <EditText
+        android:id="@+id/rFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/em2"/>
+
+    <TextView
+        android:id="@+id/em3"
+        android:layout_width="280.96dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+
+        android:textSize="15sp"
+        android:text="Second Name"
+        android:textColor="@color/Blackk"
+        android:layout_below="@id/rFirstName"
+        />
+    <TextView
+        android:id="@+id/em4"
+        android:layout_width="280.96dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+
+        android:textSize="15sp"
+        android:text="K Number"
+        android:textColor="@color/Blackk"
+        android:layout_below="@id/rSecondName"
+        />
+    <TextView
+        android:id="@+id/em5"
+        android:layout_width="280.96dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+
+        android:textSize="15sp"
+        android:text="Date"
+        android:textColor="@color/Blackk"
+        android:layout_below="@id/rKnumber"
+        />
+    <TextView
+        android:id="@+id/em6"
+        android:layout_width="280.96dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+
+        android:textSize="15sp"
+        android:text="Time"
+        android:textColor="@color/Blackk"
+        android:layout_below="@id/date"
+        />
+
+
+    <EditText
+        android:id="@+id/rSecondName"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/em3"/>
+
+    <EditText
+        android:id="@+id/rKnumber"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:hint="If not a student enter 0"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/em4"/>
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/em5"/>
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/em6"/>
+    <TextView
+        android:id="@+id/em7"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+
+        android:textSize="15sp"
+        android:text="Select Food Category"
+        android:textColor="@color/Blackk"
+        android:layout_below="@id/time"
+        />
+
+    <TextView
+        android:id="@+id/em8"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@id/em7"
+
+        android:textSize="15sp"
+        android:text="Select Food Item"
+        android:textColor="@color/Blackk"
+        android:layout_below="@id/time"
+        />
+
+
+
+    <Spinner
+        android:id="@+id/rTest"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:background="@drawable/spinners"
+        android:layout_below="@id/em7"
+
+
+        />
+    <Spinner
+        android:id="@+id/rTest2"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:background="@drawable/spinners"
+        android:layout_toRightOf="@id/rTest"
+        android:layout_below="@id/em7"
+        android:layout_marginLeft="10dp"
+        />
+    <Spinner
+        android:id="@+id/sCat2"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:background="@drawable/spinners"
+        android:layout_below="@id/rTest2"
+        android:layout_marginTop="5dp"
+        />
+
+    <Spinner
+        android:id="@+id/sFood2"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:background="@drawable/spinners"
+        android:layout_below="@id/rTest2"
+        android:layout_toRightOf="@id/sCat2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <Spinner
+        android:id="@+id/sCat3"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:background="@drawable/spinners"
+        android:layout_below="@id/sFood2"
+        android:layout_marginTop="5dp"
+        />
+
+    <Spinner
+        android:id="@+id/sFood3"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/sCat2"
+        android:background="@drawable/spinners"
+        android:layout_toRightOf="@id/sCat3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <Button
+        android:id="@+id/addRequest"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/rectangle_3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button"
+        android:textSize="12dp"
+        android:onClick="addRequest"
+        android:text="Send Request" />
+
+
+</RelativeLayout>

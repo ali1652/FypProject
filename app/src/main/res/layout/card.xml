@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/shirtItem"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="Name">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/deleteButtonTS"
+                    android:layout_width="32dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/binicon"
+                    android:tint="@android:color/black"
+                    android:onClick="deleteShirt">
+
+                </Button>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

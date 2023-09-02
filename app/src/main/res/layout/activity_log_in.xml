@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LogIn">
+
+    <View
+        android:id="@+id/headerBar"
+        android:layout_width="428dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/headertitle" />
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="274dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="KU FOOD BANK"
+        android:textSize="32dp"
+        android:textColor="@color/White"
+        android:gravity="center_horizontal|top"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="78dp"
+        android:textSize="48dp"
+        android:textColor="@color/HeaderColor"
+        android:text="Log In"
+        android:gravity="center_horizontal|top"
+        />
+
+
+
+    <View
+        android:id="@+id/logo"
+        android:layout_width="79dp"
+        android:layout_height="76dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/logo"
+        />
+
+
+
+    <Button
+        android:id="@+id/backBTN"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="bpgBack"
+        android:layout_alignParentLeft="true"/>
+
+
+
+    <TextView
+        android:id="@+id/br"
+        android:layout_width="280.96dp"
+        android:layout_height="28.32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:textSize="24dp"
+        android:text="Email "
+        android:textColor="@color/Blackk"
+        android:layout_below="@id/title"
+        />
+
+    <EditText
+        android:id="@+id/userNameLogIn"
+        android:layout_width="374dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/br"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/brr"
+        android:layout_width="280.96dp"
+        android:layout_height="28.32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:textSize="24dp"
+        android:text="Password"
+        android:textColor="@color/Blackk"
+        android:layout_below="@id/userNameLogIn"
+        />
+
+
+    <EditText
+        android:id="@+id/passwordLogIn"
+        android:layout_width="374dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+
+        android:inputType="textPassword"
+        android:layout_below="@id/brr"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/adpN"
+        android:layout_width="wrap_content"
+        android:layout_height="28.32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:textSize="24dp"
+        android:text="If you are a ADMIN enter PIN"
+        android:textColor="@color/Blackk"
+        android:layout_below="@id/passwordLogIn"
+        />
+
+    <EditText
+        android:id="@+id/adminPin"
+        android:layout_width="374dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:layout_below="@id/adpN"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/adminPin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:text="Log In" />
+
+
+</RelativeLayout>
